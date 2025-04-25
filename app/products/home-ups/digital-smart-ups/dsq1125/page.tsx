@@ -1,0 +1,170 @@
+import type { Metadata } from "next"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+import WhatsAppButton from "@/components/whatsapp-button"
+import Image from "next/image"
+import Link from "next/link"
+import { Download } from "lucide-react"
+
+export const metadata: Metadata = {
+  title: "Digital Smart UPS DSQ1125 | Durasol Energi",
+  description:
+    "Durasol Digital Smart UPS DSQ1125 - Advanced power backup solution with 1000VA/12V capacity, modified sine wave output, and comprehensive protection features for home and office use.",
+}
+
+export default function DSQ1125Page() {
+   const handleDownloadClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string) => {
+      if (url.toLowerCase().endsWith('.pdf')) {
+        e.preventDefault()
+        window.open(url, '_blank')
+      }
+    }
+  return (
+    <>
+      <Navbar />
+      <main className="min-h-screen bg-gray-50">
+        {/* Hero Section */}
+        <section className="relative bg-gradient-to-r from-[#089c9c] to-[#067a7a] py-16 md:py-24">
+          <div className="absolute inset-0 opacity-20">
+            <Image src="/images/network-bg.png" alt="Network Background" fill className="object-cover" />
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="max-w-3xl mx-auto text-center text-white">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">DSQ1125 Digital Smart UPS</h1>
+              <p className="text-xl md:text-2xl opacity-90">
+                1000VA/12V Digital Smart UPS with modified sine wave output
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Breadcrumb */}
+        <div className="bg-white py-4 shadow-sm">
+          <div className="container mx-auto px-4">
+            <div className="flex text-sm text-gray-500">
+              <Link href="/" className="hover:text-[#089c9c]">
+                Home
+              </Link>
+              <span className="mx-2">/</span>
+              <Link href="/products" className="hover:text-[#089c9c]">
+                Products
+              </Link>
+              <span className="mx-2">/</span>
+              <Link href="/products/home-ups" className="hover:text-[#089c9c]">
+                Home UPS
+              </Link>
+              <span className="mx-2">/</span>
+              <Link href="/products/home-ups/digital-smart-ups" className="hover:text-[#089c9c]">
+                Digital Smart UPS
+              </Link>
+              <span className="mx-2">/</span>
+              <span className="text-gray-900 font-medium">DSQ1125</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Product Detail Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-start">
+              {/* Product Image */}
+              <div className="bg-white rounded-xl shadow-md overflow-hidden p-8">
+                <div className="relative h-[400px]">
+                  <Image
+                    src="/products/dsq1000og.jpg"
+                    alt="DSQ1125 Digital Smart UPS"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </div>
+              </div>
+
+              {/* Product Details */}
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-4">Durasol Digital Smart UPS DSQ1000 – Reliable & Efficient Power Backup</h2>
+                <p className="text-xl text-[#089c9c] font-medium mb-6">1000VA/12V Digital Smart UPS</p>
+
+                <p className="text-gray-700 mb-8">
+                  Durasol Digital Smart UPS DSQ1000 is an innovative and high-performance power backup solution, designed to seamlessly support home appliances, IT equipment, and security systems. Equipped with a high-speed microcontroller, this smart UPS provides 100% clean, regulated, and stable digital output, ensuring the safe operation of sensitive electronic devices.
+
+With built-in ATBM technology, it supports multiple battery types, including Tubular, LA, VRLA, and Li-ion batteries, providing flexibility and enhanced battery performance. Its instant changeover feature ensures uninterrupted power supply, making it ideal for IT loads, modems, routers, and security systems.
+                </p>
+
+             {/*   <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">Key Features</h3>
+                  <ul className="list-disc pl-6 text-gray-700 space-y-2">
+                    <li>1000VA/12V capacity for enhanced power backup</li>
+                    <li>Modified sine wave output for consistent performance</li>
+                    <li>Intelligent battery management system for extended battery life</li>
+                    <li>LCD display with real-time status monitoring</li>
+                    <li>Automatic voltage regulation for stable power output</li>
+                    <li>Comprehensive protection: overload, short circuit, and over-temperature</li>
+                    <li>Multi-battery compatibility (flat, tubular, SMF)</li>
+                    <li>Generator compatibility for extended power outages</li>
+                    <li>Fast charging technology for quicker battery recharge</li>
+                  </ul>
+                </div> */}
+
+                {/* Download Brochure Button */}
+                <a
+                  href="/products/pdf/dsq1000pdf.pdf"
+                  className="inline-flex items-center bg-[#089c9c] text-white px-6 py-3 rounded-lg font-medium hover:bg-[#078787] transition-colors"
+                  //download
+                 // onClick={(e) => handleDownloadClick(e, "/products/pdf/dsq1000pdf.pdf")}
+                >
+                  Technical Brochure
+                  <Download className="w-4 h-4 ml-2" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Technical Specifications */}
+      {/*  <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">Technical Specifications</h2>
+
+            <div className="max-w-3xl mx-auto bg-gray-50 rounded-xl overflow-hidden">
+              <div className="grid grid-cols-2 border-b border-gray-200">
+                <div className="p-4 font-medium bg-gray-100">Capacity</div>
+                <div className="p-4">1000VA / 12V</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-gray-200">
+                <div className="p-4 font-medium bg-gray-100">Output Waveform</div>
+                <div className="p-4">Modified Sine Wave</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-gray-200">
+                <div className="p-4 font-medium bg-gray-100">Input Voltage Range</div>
+                <div className="p-4">140V - 290V AC</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-gray-200">
+                <div className="p-4 font-medium bg-gray-100">Output Voltage</div>
+                <div className="p-4">230V ± 8%</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-gray-200">
+                <div className="p-4 font-medium bg-gray-100">Transfer Time</div>
+                <div className="p-4">Less than 8ms</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-gray-200">
+                <div className="p-4 font-medium bg-gray-100">Battery Type</div>
+                <div className="p-4">Compatible with Flat, Tubular, SMF & Local</div>
+              </div>
+              <div className="grid grid-cols-2 border-b border-gray-200">
+                <div className="p-4 font-medium bg-gray-100">Charging Current</div>
+                <div className="p-4">12A max</div>
+              </div>
+              <div className="grid grid-cols-2">
+                <div className="p-4 font-medium bg-gray-100">Protection</div>
+                <div className="p-4">Overload, Short Circuit, Battery Low/High, Over Temperature</div>
+              </div>
+            </div>
+          </div>
+        </section> */}
+      </main>
+      <Footer />
+      <WhatsAppButton phoneNumber="+91 95559 65202" />
+    </>
+  )
+}
