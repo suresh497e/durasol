@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Calendar, Building2, Building, Lightbulb, Factory, Battery, Zap, X } from "lucide-react"
+import { Calendar, Building2, Building, Lightbulb, Factory, Battery, Zap, X, FileChartColumnIncreasing, RocketIcon } from "lucide-react"
 import Image from "next/image"
 
 const milestones = [
@@ -81,7 +81,32 @@ const milestones = [
     objectFit: "contain",
     objectPosition: "center",
   },
+
+  {
+    year: 2024,
+    title: "Started Hybrid Solar Inverter Plan",
+    description: "Revolutionary new product line introduction",
+    icon: FileChartColumnIncreasing,
+    image:
+      "/images/roadmap_2024.jpeg",
+    align: "right",
+    objectFit: "contain",
+    objectPosition: "center",
+  },
+
+  {
+    year: 2025,
+    title: "Launched Lithium Battery Plant",
+    description: "Revolutionary new product line introduction",
+    icon: RocketIcon,
+    image:
+      "/images/roadmap_2025.jpg",
+    align: "left",
+    objectFit: "contain",
+    objectPosition: "center",
+  },
 ]
+
 
 export default function Roadmap() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
