@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar"
-import Certifications from "@/components/certifications"
+//import Certifications from "@/components/certifications"
+import Certifications from "@/components/certifications-original"
 import Footer from "@/components/footer"
 import WhatsAppButton from "@/components/whatsapp-button"
 

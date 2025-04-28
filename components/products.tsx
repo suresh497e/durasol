@@ -160,7 +160,7 @@ export default function Products() {
               {currentProduct.description}
             </p>
             <motion.div whileHover={{ x: 5 }} transition={{ duration: 0.3 }}>
-              <Link
+              {/* <Link
                 href={currentProduct.link}
                 className="inline-flex items-center bg-[#089c9c] text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-[#078787] transition-colors text-sm md:text-base"
               >
@@ -174,7 +174,7 @@ export default function Products() {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
-              </Link>
+              </Link> */}
             </motion.div>
           </motion.div>
         </motion.div>

@@ -23,7 +23,7 @@ export default function Home() {
       <VideoSection />
       <Products />
       <Innovation />
-      <Roadmap />
+      {/* <Roadmap /> */}
       <CompactAmbassadorCarousel />
       <VideoTestimonials />
       <Footer />
