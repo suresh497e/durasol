@@ -6,6 +6,8 @@ import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react"
+import { useAuth } from "@/components/auth-provider"
+import { useRouter } from "next/navigation"
 
 // Define the navigation items with nested structure
 const navItems = [
@@ -116,6 +118,16 @@ export function Navbar() {
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null)
   const dropdownRef = useRef<HTMLDivElement>(null)
 
+  //handle resirect to distributor portal
+  const { logout, user, isLoggedIn } = useAuth()
+  const router= useRouter()
+  const handleDistributorPortalClick = () => {
+    if(isLoggedIn) {
+      router.push("/distributor");
+    } else {
+      router.push("/login");
+    }
+  }
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -259,14 +271,15 @@ export function Navbar() {
             >
               Contact Us
             </Link>
-            <a
-              href="https://distribution.durasolenergi.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+            onClick= {handleDistributorPortalClick}
+             // href="/distributor"
+              //target="_blank"
+              ///rel="noopener noreferrer"
               className="text-sm xl:text-base font-medium text-black bg-[#089c9c] hover:bg-[#078787] hover:text-black px-3 py-1 rounded-md transition-colors whitespace-nowrap"
             >
               Distributor Portal
-            </a>
+            </button>
           </div>
 
           {/* Mobile menu button */}

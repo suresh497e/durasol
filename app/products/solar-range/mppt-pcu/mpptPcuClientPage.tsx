@@ -102,12 +102,12 @@ Designed with Interleaved MPPT technology, it provides 30% higher efficiency tha
                         src={product.image || "/placeholder.svg"}
                         alt={product.name}
                         fill
-                        className="object-contain p-6 transition-transform duration-300 hover:scale-105"
+                        className="object-cover p-6 transition-transform duration-300 hover:scale-105"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />
-                      <div className="absolute top-4 right-4 bg-[#089c9c] text-white text-xs font-bold px-2 py-1 rounded">
+                      {/* <div className="absolute top-4 right-4 bg-[#089c9c] text-white text-xs font-bold px-2 py-1 rounded">
                         Durasol
-                      </div>
+                      </div> */}
                     </div>
                   </Link>
 

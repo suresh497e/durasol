@@ -188,16 +188,16 @@ export default function AutomotiveBatteriesClientPage() {
                   className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all"
                 >
                   <Link href={product.link} className="block">
-                    <div className="relative h-64 bg-gray-100">
+                    <div className="relative h-96 bg-gray-100">
                       <Image
                         src={product.image || "/placeholder.svg"}
                         alt={product.name}
                         fill
-                        className="object-contain p-4"
+                        className="object-cover p-4"
                       />
-                      <div className="absolute top-4 left-4 bg-[#089c9c] text-white text-xs font-medium px-2 py-1 rounded">
+                      {/* <div className="absolute top-4 left-4 bg-[#089c9c] text-white text-xs font-medium px-2 py-1 rounded">
                         Durasol
-                      </div>
+                      </div> */}
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-bold text-gray-900 mb-1">{product.name}</h3>

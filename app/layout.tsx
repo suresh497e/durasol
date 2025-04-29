@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { AuthProvider } from "@/components/auth-provider"
 import EnhancedWhatsAppButton from "@/components/enhanced-whatsapp-button"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -32,10 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
+        <AuthProvider>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem >
           {children}
           <EnhancedWhatsAppButton phoneNumber="+91 8826022335" />
         </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   )

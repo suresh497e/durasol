@@ -32,7 +32,7 @@ export default function SolarWaterPumpsClientPage() {
                     alt="Solar Water Pumps"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover h-full w-full"
                   />
                 </div>
                 <div className="p-6">
@@ -54,7 +54,7 @@ export default function SolarWaterPumpsClientPage() {
                     alt="Solar Pump Controller"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover h-full w-full"
                   />
                 </div>
                 <div className="p-6">
@@ -79,7 +79,7 @@ export default function SolarWaterPumpsClientPage() {
                     alt="Solar Pump Inverter"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover h-full w-full"
                   />
                 </div>
                 <div className="p-6">

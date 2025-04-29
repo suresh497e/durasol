@@ -308,12 +308,12 @@ export default function VRLABatteriesClientPage() {
                       className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-all"
                     >
                       <Link href={product.link} className="block">
-                        <div className="relative h-64 bg-gray-100">
+                        <div className="relative h-72 bg-gray-100">
                           <Image
                             src={product.image || "/placeholder.svg"}
                             alt={product.name}
                             fill
-                            className="object-contain p-4"
+                            className="object-cover p-4"
                           />
                         </div>
                         <div className="p-6">

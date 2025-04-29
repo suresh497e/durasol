@@ -26,13 +26,13 @@ export default function PureSineWaveUPSClientPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* DSW850 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="p-4 h-48 flex items-center justify-center bg-gray-100">
+                <div className="flex items-center justify-center bg-gray-100">
                   <Image
                     src="/products/dsw850.jpg"
                     alt="DSW850 Pure Sine Wave UPS"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -51,13 +51,13 @@ export default function PureSineWaveUPSClientPage() {
 
               {/* DSW950 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="p-4 h-48 flex items-center justify-center bg-gray-100">
+                <div className="flex items-center justify-center bg-gray-100">
                   <Image
                     src="/products/dsw1250.jpg"
                     alt="DSW950 Pure Sine Wave UPS"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover w-full h-full"
                   />
                 </div>
                 <div className="p-6">
@@ -76,13 +76,13 @@ export default function PureSineWaveUPSClientPage() {
 
               {/* DSW1150 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="p-4 h-48 flex items-center justify-center bg-gray-100">
+                <div className="flex items-center justify-center bg-gray-100">
                   <Image
                     src="/products/dsw1700.jpg"
                     alt="DSW1150 Pure Sine Wave UPS"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover h-full w-full"
                   />
                 </div>
                 <div className="p-6">
@@ -101,13 +101,13 @@ export default function PureSineWaveUPSClientPage() {
 
               {/* DSW1450 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="p-4 h-48 flex items-center justify-center bg-gray-100">
+                <div className="flex items-center justify-center bg-gray-100">
                   <Image
                     src="/products/dsw2500.jpg"
                     alt="DSW1450 Pure Sine Wave UPS"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover h-full w-full"
                   />
                 </div>
                 <div className="p-6">
@@ -126,13 +126,13 @@ export default function PureSineWaveUPSClientPage() {
 
               {/* DSW1700 */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="p-4 h-48 flex items-center justify-center bg-gray-100">
+                <div className="flex items-center justify-center bg-gray-100">
                   <Image
                     src="/products/dsw3.5kv.jpg"
                     alt="DSW1700 Pure Sine Wave UPS"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover h-full w-full"
                   />
                 </div>
                 <div className="p-6">
@@ -151,13 +151,13 @@ export default function PureSineWaveUPSClientPage() {
 
               {/* DSW 3-5kVA */}
               <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                <div className="p-4 h-48 flex items-center justify-center bg-gray-100">
+                <div className="flex items-center justify-center bg-gray-100">
                   <Image
                     src="/products/dsw5kv.jpg"
                     alt="DSW 3-5kVA Pure Sine Wave UPS"
                     width={200}
                     height={200}
-                    className="object-contain h-full"
+                    className="object-cover h-full w-full"
                   />
                 </div>
                 <div className="p-6">

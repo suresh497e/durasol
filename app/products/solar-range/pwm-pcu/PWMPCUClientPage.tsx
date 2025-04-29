@@ -70,12 +70,12 @@ export default function PWMPCUClientPage() {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {/* Product 1 */}
             <div className="overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg">
-              <div className="relative h-48 w-full">
+              <div className="relative h-72 w-full">
                 <Image
                   src="/products/solar_pcu_pwm.jpg"
                   alt="Durasol Solar PCU PWM"
                   fill
-                  className="object-contain"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div className="p-6">
@@ -92,12 +92,12 @@ export default function PWMPCUClientPage() {
 
             {/* Product 2 */}
             <div className="overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg">
-              <div className="relative h-48 w-full">
+              <div className="relative h-72 w-full">
                 <Image
                   src="/products/solar_pcu_pwm1.jpg"
                   alt="Durasol Solar PCU PWM Enhanced"
                   fill
-                  className="object-contain"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div className="p-6">
@@ -116,12 +116,12 @@ export default function PWMPCUClientPage() {
 
             {/* Product 3 */}
             <div className="overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg">
-              <div className="relative h-48 w-full">
+              <div className="relative h-72 w-full">
                 <Image
                   src="/products/dsh2500.jpg"
                   alt="PWM PCU DSH Series"
                   fill
-                  className="object-contain"
+                  className="object-cover w-full h-full"
                 />
               </div>
               <div className="p-6">
